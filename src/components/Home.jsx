@@ -1,8 +1,13 @@
 import React from 'react'
+import IntroCard from './IntroCard'
+import MainInfo from './MainInfo'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <IntroCard/>
+        <MainInfo/>
+    </div>
   )
 }
 
