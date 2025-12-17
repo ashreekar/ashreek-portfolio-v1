@@ -4,7 +4,7 @@ import MainInfo from './MainInfo'
 
 function Home() {
   return (
-    <div>
+    <div className='dark:bg-black p-1'>
         <IntroCard/>
         <MainInfo/>
     </div>

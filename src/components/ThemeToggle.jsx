@@ -1,9 +1,16 @@
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
 
-function ThemeToggle({ dark, setDark }) {
+function ThemeToggle() {
+    const [dark, setDark] = useState(false);
+    const handleToggleTheme = () => {
+        setDark(prev => !prev);
+        document.getElementById("root").classList.toggle("dark")
+    }
+
     return (
         <button
-            onClick={() => setDark(!dark)}
+            onClick={handleToggleTheme}
             aria-label="Toggle theme"
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
         >
