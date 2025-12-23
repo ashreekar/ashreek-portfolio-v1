@@ -7,6 +7,7 @@ import Home from './components/Home.jsx'
 import ProjectsPage from './components/ProjectsPage.jsx'
 import FeaturesComing from './components/FeafturesComing.jsx'
 import NotFound from './components/NotFound.jsx'
+import Contact from './components/Contact.jsx'
 
 const router = createBrowserRouter(
   [
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
         },
         {
           path: "/contact",
-          element: <App />
+          element: <Contact />
         }
       ]
     }
