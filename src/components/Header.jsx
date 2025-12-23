@@ -17,7 +17,7 @@ function Header() {
     ]
 
     return (
-        <header className="sticky top-2 z-50">
+        <header className="sticky top-0 z-50 mt-2">
             <div className="mx-auto w-full lg:w-1/2 px-6">
                 <nav
                     className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-8 rounded-2xl px-6 py-4 backdrop-blur-md bg-white/60 dark:bg-white/10 border border-gray-200/40 dark:border-white/10"

@@ -7,7 +7,7 @@ export const projects = [
         "Implemented JWT-based authentication and secure session handling.",
         "Enabled video uploads, likes, comments, and sharing features."
       ],
-      "image": "https://via.placeholder.com/600x400?text=YouTube+Clone",
+      "image": "https://cdn.dribbble.com/userupload/36034876/file/original-37c222caf1c6d5db997bbd7d50a4d73f.png?format=webp&resize=400x300&vertical=center",
       "github": "https://github.com/username/youtube-clone",
       "uiLink": "https://youtube-clone-demo.vercel.app",
       "tags": ["MERN", "JWT", "MongoDB"]
@@ -20,7 +20,7 @@ export const projects = [
         "Built RESTful APIs using Node.js and Express.js with JWT authentication.",
         "Implemented Redux Toolkit and MongoDB for secure and scalable data handling."
       ],
-      "image": "https://via.placeholder.com/600x400?text=ShoppyGlobe",
+      "image": "https://cdn.dribbble.com/userupload/7237621/file/original-2fb2c320cac52c9230211673db49e770.png?format=webp&resize=400x300&vertical=center",
       "github": "https://github.com/username/shoppyglobe-fullstack",
       "uiLink": "https://shoppyglobe.vercel.app",
       "tags": ["React", "Node.js", "MongoDB"]
