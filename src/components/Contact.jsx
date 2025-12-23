@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { PersonIcon, EnvelopeClosedIcon, MobileIcon } from "@radix-ui/react-icons";
 
 function Contact() {
@@ -18,7 +18,7 @@ function Contact() {
           e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
           alert("Something went wrong!");
         }
       );
@@ -28,7 +28,7 @@ function Contact() {
     <div className="dark:bg-black min-h-screen flex items-center p-1">
       <section className="mx-auto w-full lg:w-11/20 px-6">
         <div className="flex flex-col gap-10 w-full items-center">
-
+        <p className="text-red-600 text-lg">Message service is currently down so don't send any messages</p>
           {/* Header */}
           <div className="flex flex-col gap-3 w-full">
             <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100">
@@ -48,7 +48,7 @@ function Contact() {
           {/* Form */}
           <form
             ref={formRef}
-            className="flex flex-col gap-6 w-full max-w-xl"
+            className="flex flex-col gap-6 w-full"
             onSubmit={handleOnSubmit}
           >
             {/* Name & Email Row */}
