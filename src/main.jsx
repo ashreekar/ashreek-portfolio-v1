@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home.jsx'
 import ProjectsPage from './components/ProjectsPage.jsx'
+import FeaturesComing from './components/FeafturesComing.jsx'
 
 const router = createBrowserRouter(
   [
@@ -22,7 +23,7 @@ const router = createBrowserRouter(
         },
         {
           path:"/blogs",
-          element:<App/>
+          element:<FeaturesComing/>
         },
         {
           path:"/contact",
