@@ -2,11 +2,20 @@ import {
     FileTextIcon,
     GitHubLogoIcon,
     LinkedInLogoIcon,
+    SpeakerLoudIcon,
     TwitterLogoIcon,
 } from "@radix-ui/react-icons";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 function IntroCard() {
+    const audioRef = useRef(new Audio("/namerefaudio.mpeg"));
+
+    const handleSpellName = () => {
+        audioRef.current.currentTime = 0;
+        audioRef.current.play();
+    };
+
     return (
         <section className="mx-auto mt-4 w-full lg:w-11/20 px-6">
             <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 rounded-3xl p-8 backdrop-blur-md bg-white/60 dark:bg-white/10">
@@ -16,8 +25,38 @@ function IntroCard() {
                         Hi <span>👋</span>, ashreek here.
                     </h1>
 
-                    <h2 className="text-lg text-gray-800 dark:text-white">
-                        You can call me <span className="font-semibold hover:text-gray-700 dark:hover:text-gray-200 hover:underline">aa-shr-eek</span> / <span className="font-semibold hover:text-gray-700 dark:hover:text-gray-200 hover:underline">ash</span>
+                    <h2 className="text-lg text-gray-800 dark:text-white flex items-center gap-2 flex-wrap justify-center md:justify-start">
+                        You can call me
+                        <span className="font-semibold hover:underline cursor-default">
+                            aa-shr-eek
+                        </span>
+                        /
+                        <span className="font-semibold hover:underline cursor-default">
+                            ash
+                        </span>
+
+                        {/* Audio button */}
+                        <button
+                            title="spell"
+                            onClick={handleSpellName}
+                            aria-label="Play name pronunciation"
+                            className="
+          ml-2
+          flex items-center justify-center
+          rounded-full
+          p-2
+          cursor-pointer
+          bg-blue-500/10 text-blue-600
+          dark:bg-blue-400/10 dark:text-blue-400
+          hover:bg-blue-500/20
+          dark:hover:bg-blue-400/20
+          transition
+          focus:outline-none focus:ring-2 focus:ring-blue-400
+          active:scale-95
+        "
+                        >
+                            <SpeakerLoudIcon className="h-4 w-4" />
+                        </button>
                     </h2>
 
                     <p className="text-sm text-gray-800 dark:text-white">
