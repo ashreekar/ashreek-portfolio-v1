@@ -1,18 +1,23 @@
 import ThemeToggle from "./ThemeToggle";
+import { Link } from "react-router-dom";
 
 function Header() {
     const lidata = [
         {
-            name: "home"
+            name: "home",
+            to: "/"
         },
         {
-            name: "projects"
+            name: "projects",
+            to: "/projects"
         },
         {
-            name: "blogs"
+            name: "blogs",
+            to: "/blogs"
         },
         {
-            name: "contact"
+            name: "contact",
+            to: "/contact"
         }
     ]
 
@@ -25,9 +30,9 @@ function Header() {
                     {/* Nav links */}
                     <ul className="flex flex-col sm:flex-row items-center gap-6 text-gray-700 dark:text-gray-300">
                         {
-                            lidata.map(item => (<li className="cursor-pointer hover:text-gray-900 dark:hover:text-white transition">
+                            lidata.map(item => (<Link to={item.to} className="cursor-pointer hover:text-gray-900 dark:hover:text-white transition">
                                 {item.name}
-                            </li>))
+                            </Link>))
                         }
                     </ul>
 

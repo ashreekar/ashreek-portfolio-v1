@@ -6,7 +6,7 @@ function Footer() {
           © {new Date().getFullYear()} Ashreek A R · Built with React & Tailwind
         </p>
         <p className="mt-1">
-          Learning. Building. Shipping 🚀
+          Learning. Building. Shipping.
         </p>
       </div>
     </footer>
