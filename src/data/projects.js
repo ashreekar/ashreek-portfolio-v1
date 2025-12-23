@@ -1,5 +1,4 @@
-{
-  "projects": [
+export const projects = [
     {
       "title": "YouTube-Inspired Video Platform",
       "type": "Full Stack",
@@ -80,4 +79,3 @@
       "tags": ["Simulink", "Firebase", "Embedded Systems"]
     }
   ]
-}

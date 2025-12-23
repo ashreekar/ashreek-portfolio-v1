@@ -1,23 +1,46 @@
-function ExperienceCard({ data }) {
+import { Link } from "react-router-dom";
+import ExperienceBullet from "./ExperienceBullet";
+
+function ExperienceCard({ item }) {
   return (
-    <div className="rounded-xl border border-gray-200 dark:border-white/10 p-5 bg-white dark:bg-white/5 transition">
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {data.role}
-        </h3>
-        <span className="text-sm text-gray-500">{data.date}</span>
+    <li className="relative ml-10 py-4">
+      {/* Logo */}
+      <Link
+        to={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800"
+      >
+        <span className="size-12 overflow-hidden rounded-full">
+          <img
+            src={item.image}
+            alt={item.company}
+            className="h-full w-full object-contain"
+          />
+        </span>
+      </Link>
+
+      {/* Content */}
+      <div className="flex flex-col gap-1">
+        <time className="text-xs text-gray-500 dark:text-gray-400">
+          {item.date}
+        </time>
+
+        <h2 className="font-semibold text-gray-900 dark:text-gray-100">
+          {item.company}
+        </h2>
+
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          {item.role}
+        </p>
+
+        <ul className="ml-4 list-disc">
+          {item.points.map((point, index) => (
+            <ExperienceBullet key={index} text={point} />
+          ))}
+        </ul>
       </div>
-
-      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-        {data.company}
-      </p>
-
-      <ul className="mt-3 list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
-        {data.points.map((point, idx) => (
-          <li key={idx}>{point}</li>
-        ))}
-      </ul>
-    </div>
+    </li>
   );
 }
 

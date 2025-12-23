@@ -1,0 +1,23 @@
+export const education = [
+  {
+    "degree": "BE - Electrical & Electronics Engineering",
+    "institute": "East West Institute of Technology",
+    "date": "2021 – 2025",
+    "score": "83%",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtber0HiJDcowFDvNNM6iL9v3IqGlNjLiKQ&s"
+  },
+  {
+    "degree": "PUC (Science)",
+    "institute": "Sri BGS PU College, Sringeri",
+    "date": "2019 – 2021",
+    "score": "93.67%",
+    "image": "https://lh3.googleusercontent.com/jtot4onr8gHfszJW9U-UqVnXnSB65hNLGj2qRRNQdX2nSIfd6rAiKGhRPjng5OAjM5c=s200"
+  },
+  {
+    "degree": "SSLC",
+    "institute": "Annapoorna Vidya Mandira, Agumbe",
+    "date": "2016 – 2019",
+    "score": "92%",
+    "image": "https://us.123rf.com/450wm/siamimages/siamimages1702/siamimages170200211/71878824-icono-adicional.jpg?ver=6"
+  }
+]
