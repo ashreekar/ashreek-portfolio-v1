@@ -4,7 +4,7 @@ function Avatar({ image, name }) {
       <img
         src={image}
         alt={name}
-        className="h-full w-full object-contain"
+        className="h-9/10 w-9/10 object-contain"
       />
     );
   }

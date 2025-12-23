@@ -12,7 +12,7 @@ function ThemeToggle() {
         <button
             onClick={handleToggleTheme}
             aria-label="Toggle theme"
-            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            className="p-1 sm:p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
         >
             {dark ? (
                 <SunIcon className="h-6 w-6 text-yellow-400" />

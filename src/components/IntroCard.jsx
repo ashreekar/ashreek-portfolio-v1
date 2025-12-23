@@ -8,24 +8,24 @@ import { Link } from "react-router-dom";
 
 function IntroCard() {
     return (
-        <section className="mx-auto mt-4 w-full lg:w-1/2 px-6">
+        <section className="mx-auto mt-4 w-full lg:w-11/20 px-6">
             <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 rounded-3xl p-8 backdrop-blur-md bg-white/60 dark:bg-white/10">
                 {/* Text */}
                 <div className="space-y-4 text-center md:text-left">
-                    <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 dark:text-gray-100">
+                    <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 dark:text-white">
                         Hi <span>👋</span>, ashreek here.
                     </h1>
 
-                    <h2 className="text-lg text-gray-600 dark:text-gray-400">
-                        You can call me *
+                    <h2 className="text-lg text-gray-800 dark:text-white">
+                        You can call me <span className="font-semibold hover:text-gray-700 dark:hover:text-gray-200 hover:underline">aa-shr-eek</span> / <span className="font-semibold hover:text-gray-700 dark:hover:text-gray-200 hover:underline">ash</span>
                     </h2>
 
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <p className="text-sm text-gray-800 dark:text-white">
                         22 years old developer from Bengaluru, KA, IN
                     </p>
 
-                    <p className="text-gray-700 dark:text-gray-300 max-w-md">
-                        Full-stack developer. Builds for myself and others as well.
+                    <p className="text-gray-800 dark:text-white max-w-md">
+                        Full-stack developer. Love to engineer stuffs.
                     </p>
 
                     {/* Actions */}
@@ -41,7 +41,6 @@ function IntroCard() {
     dark:bg-gray-900
     dark:text-gray-300 dark:border-gray-600
     hover:bg-gray-100 dark:hover:bg-gray-800
-    transition
   "
                         >
                             <FileTextIcon className="h-4 w-4" />
@@ -66,7 +65,7 @@ function IntroCard() {
                                 to={to}
                                 target="_blank"
                                 aria-label={label}
-                                className="rounded-xl p-2 border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10 transition"
+                                className="rounded-xl p-2 border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10"
                             >
                                 {icon}
                             </Link>
