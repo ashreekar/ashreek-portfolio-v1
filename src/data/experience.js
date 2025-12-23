@@ -3,7 +3,6 @@ export const experience = [
     company: "Intellisay",
     role: "Software Engineering Intern",
     date: "Dec 2024",
-    image: "https://i.pinimg.com/736x/4a/d7/9a/4ad79aa01e9bba788cd35453a9325fa0.jpg",
     link: "https://intellisay.xyz/", 
     points: [
       "Worked on the Intellisay product",

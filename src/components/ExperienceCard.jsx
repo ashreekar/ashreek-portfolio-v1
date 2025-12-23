@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ExperienceBullet from "./ExperienceBullet";
+import Avatar from "./Avatar";
 
 function ExperienceCard({ item }) {
   return (
@@ -12,11 +13,7 @@ function ExperienceCard({ item }) {
         className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800"
       >
         <span className="size-12 overflow-hidden rounded-full">
-          <img
-            src={item.image}
-            alt={item.company}
-            className="h-full w-full object-contain"
-          />
+          <Avatar image={item.image} name={item.company} />
         </span>
       </Link>
 

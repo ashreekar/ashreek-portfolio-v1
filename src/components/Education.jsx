@@ -1,32 +1,14 @@
 import EducationCard from "./EducationCard";
+import { education } from "../data/education";
 
 function Education() {
-  const education = [
-    {
-      degree: "BE - Electrical & Electronics Engineering",
-      institute: "East West Institute of Technology",
-      date: "2021 – 2025",
-      score: "83%",
-    },
-    {
-      degree: "PUC (Science)",
-      institute: "Sri BGS PU College, Sringeri",
-      date: "2021",
-      score: "93.67%",
-    },
-    {
-      degree: "SSLC",
-      institute: "Annapoorna Vidya Mandira, Agumbe",
-      date: "2019",
-      score: "92%",
-    },
-  ];
-
   return (
-    <div className="space-y-4">
-      {education.map((edu, index) => (
-        <EducationCard key={index} data={edu} />
-      ))}
+    <div className="p-0">
+      <ul className="ml-10 border-l border-gray-200 dark:border-gray-700">
+        {education.map((item, index) => (
+          <EducationCard key={index} item={item} />
+        ))}
+      </ul>
     </div>
   );
 }

@@ -1,18 +1,38 @@
-function EducationCard({ data }) {
-  return (
-    <div className="rounded-xl border border-gray-200 dark:border-white/10 p-5 bg-white dark:bg-white/5">
-      <h3 className="font-semibold text-gray-900 dark:text-white">
-        {data.degree}
-      </h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400">
-        {data.institute}
-      </p>
+import Avatar from "./Avatar";
 
-      <div className="flex justify-between mt-2 text-sm text-gray-500">
-        <span>{data.date}</span>
-        <span>{data.score}</span>
+function EducationCard({ item }) {
+  return (
+    <li className="relative ml-10 py-4">
+      {/* Logo */}
+      <div className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800">
+        <span className="size-12 overflow-hidden rounded-full">
+          <Avatar image={item.image} name={item.institute} />
+        </span>
       </div>
-    </div>
+
+      {/* Content */}
+      <div className="flex flex-col gap-1">
+        {/* Date */}
+        <time className="text-xs text-gray-500 dark:text-gray-400">
+          {item.date}
+        </time>
+
+        {/* Degree */}
+        <h2 className="font-semibold text-gray-900 dark:text-gray-100">
+          {item.degree}
+        </h2>
+
+        {/* Institute */}
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          {item.institute}
+        </p>
+
+        {/* Score */}
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          Score: {item.score}
+        </p>
+      </div>
+    </li>
   );
 }
 

@@ -17,7 +17,6 @@ export const education = [
     "degree": "SSLC",
     "institute": "Annapoorna Vidya Mandira, Agumbe",
     "date": "2016 – 2019",
-    "score": "92%",
-    "image": "https://us.123rf.com/450wm/siamimages/siamimages1702/siamimages170200211/71878824-icono-adicional.jpg?ver=6"
+    "score": "92%"
   }
 ]
