@@ -39,26 +39,46 @@ function ProjectCard({ project }) {
 
         {/* Links */}
         <div className="flex gap-2">
-          {project.uiLink && (
+          {project.link && (
             <a
-              href={project.uiLink}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-2 py-1 text-[10px] rounded-md bg-gray-900 text-white dark:bg-white dark:text-black hover:opacity-80 transition"
+              className="px-2 py-1 cursor-pointer text-[10px] rounded-md bg-gray-900 text-white dark:bg-white dark:text-black hover:opacity-80 transition"
             >
               Website
             </a>
           )}
-
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 px-2 py-1 text-[10px] rounded-md bg-gray-900 text-white dark:bg-white dark:text-black hover:opacity-80 transition"
-          >
-            <GitHubLogoIcon className="h-3 w-3" />
-            Source
-          </a>
+          {project["github(backend)"] && (
+            <a
+              href={project["github(backend)"]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-2 cursor-pointer py-1 text-[10px] rounded-md bg-gray-900 text-white dark:bg-white dark:text-black hover:opacity-80 transition"
+            >
+              Gihub(backend)
+            </a>
+          )}
+          {project["github(ui)"] && (
+            <a
+              href={project["github(ui)"]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-2 py-1 text-[10px] cursor-pointer rounded-md bg-gray-900 text-white dark:bg-white dark:text-black hover:opacity-80 transition"
+            >
+              Github(ui)
+            </a>
+          )}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-2 py-1 text-[10px] cursor-pointer rounded-md bg-gray-900 text-white dark:bg-white dark:text-black hover:opacity-80 transition"
+            >
+              Github
+            </a>
+          )}
         </div>
       </div>
     </div>

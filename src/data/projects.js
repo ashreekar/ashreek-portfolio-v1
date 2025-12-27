@@ -8,9 +8,10 @@ export const projects = [
         "Enabled video uploads, likes, comments, and sharing features."
       ],
       "image": "https://cdn.dribbble.com/userupload/36034876/file/original-37c222caf1c6d5db997bbd7d50a4d73f.png?format=webp&resize=400x300&vertical=center",
-      "github": "https://github.com/username/youtube-clone",
-      "uiLink": "https://youtube-clone-demo.vercel.app",
-      "tags": ["MERN", "JWT", "MongoDB"]
+      "github(ui)": "https://github.com/ashreekar/youtube-frontend",
+      "github(backend)": "https://github.com/ashreekar/youtube-backend",
+      "link": "https://youtube-frontend-pied.vercel.app",
+      "tags": ["ReactJS","NodeJS", "JWT", "MongoDB"]
     },
     {
       "title": "ShoppyGlobe E-commerce Application",
@@ -21,8 +22,9 @@ export const projects = [
         "Implemented Redux Toolkit and MongoDB for secure and scalable data handling."
       ],
       "image": "https://cdn.dribbble.com/userupload/7237621/file/original-2fb2c320cac52c9230211673db49e770.png?format=webp&resize=400x300&vertical=center",
-      "github": "https://github.com/username/shoppyglobe-fullstack",
-      "uiLink": "https://shoppyglobe.vercel.app",
+      "github(ui)": "https://github.com/ashreekar/Shoppy-Globe",
+      "github(backend)": "https://github.com/ashreekar/Shoppy-Globe",
+      "link": "https://shoppy-globe-virid.vercel.app/",
       "tags": ["React", "Node.js", "MongoDB"]
     },
     {
@@ -75,7 +77,7 @@ export const projects = [
       ],
       "image": "https://via.placeholder.com/600x400?text=BMS+Project",
       "github": "https://github.com/username/bms-project",
-      "uiLink": "https://bms-dashboard-demo.vercel.app",
+      "link": "https://bms-dashboard-demo.vercel.app",
       "tags": ["Simulink", "Firebase", "Embedded Systems"]
     }
   ]
