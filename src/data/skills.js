@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
   {
     name: "ReactJS",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
